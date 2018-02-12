@@ -11,6 +11,7 @@ gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'redis', '~> 3.0'
+gem 'sidekiq'
 
 group :development, :test do
   gem 'capybara', '~> 2.13'
