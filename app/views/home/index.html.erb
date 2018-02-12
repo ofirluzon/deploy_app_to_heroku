@@ -1,2 +1,8 @@
 <h1>Hello Heroku!</h1>
 <p>Everything is fine!</p>
+
+<ul>
+  <% @tests.each do |test| %>
+    <li><%= "##{test.id} - #{test.created_at}" %></li>
+  <% end %>
+</ul>
