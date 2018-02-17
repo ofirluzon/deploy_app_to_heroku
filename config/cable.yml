@@ -9,5 +9,5 @@ test:
 
 production:
   adapter: redis
-  url: <%= ENV['REDISTOGO_URL'] %>
+  url: <%= ENV['REDIS_PROVIDER'] %>
   channel_prefix: deploy_app_to_heroku_production
