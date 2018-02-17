@@ -1,6 +1,12 @@
 <h1>Hello Heroku!</h1>
-<p>Everything is fine!</p>
 
+<h3>Let's test Action Cable</h3>
+<%= button_to 'Click me', action_cable_test_path, remote: true %>
+<div id="action_cable_result" style="display: none;">
+  <p>Everything is fine!</p>
+</div>
+
+<h3>Successfuly completed jobs by a worker:</h3>
 <ul>
   <% @tests.each do |test| %>
     <li><%= "##{test.id} - #{test.created_at}" %></li>
